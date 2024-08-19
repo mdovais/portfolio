@@ -1,0 +1,124 @@
+.my-work {
+  height: 120px;
+  width: 100svw;
+  margin: 70px 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 span {
+    color: #22577a;
+  }
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+  }
+  p {
+    width: 900px;
+    margin: 15px;
+    font-size: 16px;
+    color: #7b7c80;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25px;
+  }
+}
+.two-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+a {
+  text-decoration: none;
+}
+.work1 {
+  margin: 5px;
+  height: 100%;
+  width: 480px;
+  padding: 5px 30px 30px;
+  border: 1px solid rgb(33, 32, 32);
+  border-radius: 20px;
+  background-color: #0e0e10;
+  cursor: pointer;
+}
+.iner-text-work {
+  height: 60px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  text-align-last: center;
+}
+.iner-box10 {
+  border: 1px solid rgb(43, 41, 41);
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.great6 {
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+@media screen and (max-width: 600px) {
+  .my-work {
+    width: 100svw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .my-work h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .my-work p {
+    font-size: 13px;
+    width: fit-content;
+    margin: 8px;
+    line-height: 1.4;
+    color: #7b7c80;
+  }
+  .my-work h1 span {
+    color: #22577a;
+  }
+  .two-works {
+    width: 100%;
+    gap: 5px;
+  }
+  .work1 {
+    min-width: 330px;
+    width: 100%;
+    height: min-content;
+    padding: 10px 20px 10px;
+  }
+  .great6 {
+    height: 80px;
+  }
+  /* .iner-box10 {
+    min-width: ;
+  } */
+}

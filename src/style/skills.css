@@ -1,0 +1,118 @@
+.text-box2 {
+  /* height: 180px; */
+  padding: 35px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 5px 20px 5px;
+  h1 span {
+    color: #80ed99;
+  }
+  h1 {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+  }
+  p {
+    text-align: center;
+    margin: 15px;
+    font-size: 16px;
+    width: 70%;
+    color: #7b7c80;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    text-wrap: wrap;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.box1 {
+  height: max-content;
+  width: 38%;
+  padding: 20px;
+  border: 1px solid rgb(33, 32, 32);
+  border-radius: 24px;
+  background-color: #0e0e10;
+}
+.iner-box {
+  border: 1px solid rgb(43, 41, 41);
+  height: 240px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070707;
+}
+.iner-text {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  text-align-last: center;
+}
+.iner-text2 {
+  font-size: 18px;
+  color: #7b7c80;
+  text-align-last: center;
+}
+@media screen and (max-width: 600px) {
+  .text-box2 {
+    width: 100svw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text-box2 h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .text-box2 p {
+    font-size: 13px;
+    width: fit-content;
+    margin: 8px;
+    line-height: 1.4;
+    color: #7b7c80;
+  }
+  .text-box2 h1 span {
+    color: #80ed99;
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .box1 {
+    height: max-content;
+    width: 80%;
+    padding: 10px;
+  }
+  .iner-box {
+    height: 150px;
+  }
+  .iner-text {
+    height: 45px;
+    font-size: 22px;
+  }
+  .iner-text2 {
+    font-size: 13px;
+  }
+}
