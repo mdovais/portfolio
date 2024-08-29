@@ -195,37 +195,6 @@
   height: 40px;
   width: 40px;
 }
-
-/* h3 {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  font-size: 38px;
-  text-align: center;
-  margin-bottom: 0;
-  span {
-    color: #e784ad;
-    font-family: "Open Sans", sans-serif;
-    font-size: 38px;
-  }
-  }  */
-p {
-  /* width: 900px; */
-  /* margin: 15px;
-  font-size: 16px;
-  color: #7b7c80;
-  text-align: center;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 25px; */
-}
-/* .great-5{
-    height: 75px;
-  display: flex;
-  align-items: center;
-} */
 @media screen and (max-width: 600px) {
   .about-main-header {
     display: flex;
