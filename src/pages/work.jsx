@@ -2,11 +2,11 @@ import React from 'react'
 import Footer from '../components/footer';
 import Website from '../components/website';
 
-const Work = ({setactive}) => {
+const Work = () => {
   return (
     <>
     <Website/>
-    <Footer setactive={setactive}/>
+    <Footer/>
     </>
   )
 }

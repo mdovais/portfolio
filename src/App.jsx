@@ -1,27 +1,30 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { useState } from "react";
 import Home from './pages/home';
 import Header from './components/header';
 import About from './pages/about';
 import Work from './pages/work';
 import Contact from './pages/contact';
+import { NavContext } from './context/navContext';
+import { useState } from 'react';
 
 function App() {
-  const [activeItem, setActiveItem] = useState("Home");
+  const [active, setActiveItem] = useState("Home");
   return (
+    <NavContext.Provider value={{active ,setActiveItem}}>
     <div className="App">
       <div className="portfolio-main-container">
-      <Header active={activeItem} setActiveItem={setActiveItem}/> 
+      <Header/> 
       <Routes>
-        <Route path='/About' element={<About active={activeItem} setactive={setActiveItem}/>}/>
-      <Route path="/Home" element={<Home active={activeItem} setactive={setActiveItem}/>} /> 
-      <Route path="/" element={<Home active={activeItem} setactive={setActiveItem}/>} /> 
-      <Route path="/Works" element={<Work active={activeItem} setactive={setActiveItem}/>} /> 
-      <Route path="/Contact" element={<Contact active={activeItem} setactive={setActiveItem}/>} /> 
+        <Route path='/About' element={<About/>}/>
+      <Route path="/Home" element={<Home/>} /> 
+      <Route path="/" element={<Home />} /> 
+      <Route path="/Works" element={<Work/>} /> 
+      <Route path="/Contact" element={<Contact/>} /> 
       </Routes>
     </div>
    </div>
+   </NavContext.Provider>
   );
 }
 

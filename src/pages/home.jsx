@@ -7,7 +7,7 @@ import Tools from "../components/tools";
 import Website from "../components/website";
 import React from "react";
 
-const Home = ({setactive,active}) => {
+const Home = () => {
   return (
     <>
       <Greet />
@@ -15,8 +15,8 @@ const Home = ({setactive,active}) => {
       <Skills />
       <Tools />
       <Website />
-      <Allwork setactive={setactive}/>
-      <Footer setactive={setactive} active={active}/>
+      <Allwork/>
+      <Footer/>
     </>
   );
 };

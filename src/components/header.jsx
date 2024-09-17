@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../style/header.css";
-
-const Header = ({active,setActiveItem}) => {
+import { NavContext } from "../context/navContext";
+const Header = () => {
+  const {active,setActiveItem} = useContext(NavContext);
   const headerobj = [
     {
       img: "https://framerusercontent.com/images/lmTnmcYy3Z8nwZYgNSeneCLfytk.svg",

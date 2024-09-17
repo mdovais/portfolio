@@ -1,9 +1,28 @@
 import React from 'react';
 import Footer from '../components/footer';
 import "../style/about.css"
+import Typed from 'typed.js';
 
-const About = ({setactive}) => {
+const About = () => {
   const imgData = ["https://img.icons8.com/?size=160&id=NfbyHexzVEDk&format=png","https://nodejs.org/static/logos/jsIconGreen.svg","https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000","https://static-00.iconduck.com/assets.00/mongodb-original-wordmark-icon-505x512-q86sq243.png","https://framerusercontent.com/images/OkBKDrqon3Bb68s6kPwyucgQiWM.svg","https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",]
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Scalable React Applications.",
+        "Advanced JavaScript.",
+        "State Management (Hooks, Redux Toolkit).",
+        "Responsive Design.",
+        "Backend Integration (Node.js, Express.js).",
+        "MongoDB.",
+        "Performance Optimization.",
+        "Git Workflows."],
+      typeSpeed: 50,
+      loop: true,
+      loopCount: Infinity
+    });
+  });
+  
   return (
     <>
     <div className="about-main-header">
@@ -25,7 +44,10 @@ const About = ({setactive}) => {
           </div>
         </div>
         <h1>I'm&nbsp;<span>Owais khan</span></h1>
-        <h2>I specialize in</h2>
+        <div className='flex-clum'>
+        <h2>I specialize in </h2>
+        <div><span id='aboout-text-u' ref={el} ></span></div>
+        </div>
         <div className="about-text">
           <span>About me</span>
           <div>
@@ -78,7 +100,7 @@ optimisation, state management, and enhancing user experience.
       </div>
     </div>
   </div>
-  <Footer setactive={setactive}/>
+  <Footer/>
   </>
   )
 }

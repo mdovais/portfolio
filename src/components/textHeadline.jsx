@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../style/textHeadline.css"
+import { Link } from "react-router-dom";
+import { NavContext } from "../context/navContext";
 
 const TextHeadline = () => {
+const {setActiveItem} = useContext(NavContext);
   const tickerTitle = [
     "Web Design",
     "Product Design",
@@ -34,9 +37,9 @@ const TextHeadline = () => {
         </p>
       </div>
 
-      <div className="red-box">
+     <Link to="/Contact" onClick={()=>setActiveItem("Contact")}><div className="red-box">
         <div className="red-footer">Let's Work Together</div>
-      </div>
+      </div></Link> 
 
       <div className="tag-box">
         <div className="ticker">

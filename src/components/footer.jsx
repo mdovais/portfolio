@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../style/footer.css";
+// import { NavContext } from "../context/navContext";
 
-const Footer = ({ setactive }) => {
+const Footer = () => {
+// const abz = useContext(NavContext);
+// console.log({abz});
+
   const socialMedia = [
     {
       img: "https://framerusercontent.com/images/gtzDysUq73PcIFESNRa0djSYuTY.svg",
@@ -59,7 +63,7 @@ const Footer = ({ setactive }) => {
               return (
                 <div className="footer-text">
                   <Link to={
-                    "/"+i.link} onClick={()=>setactive(i.link)}>{i.name}</Link>
+                    "/"+i.link} onClick={()=>setActiveItem(i.link)}>{i.name}</Link>
                 </div>
               );
             })}
@@ -76,7 +80,7 @@ const Footer = ({ setactive }) => {
             })}
           </div>
         </div>
-        <Link to="/Contact" onClick={()=>setactive("Contact")} >
+        <Link to="/Contact" onClick={()=>setActiveItem("Contact")} >
           <div className="four-footer">
             Contact Me
             <img

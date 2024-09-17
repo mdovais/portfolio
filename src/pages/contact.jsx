@@ -5,7 +5,7 @@ import MessageBox from "../components/messageBox";
 import ContactProfile from "../components/contactProfile";
 import ContactSocial from "../components/contactSocial";
 
-const Contact = ({ setactive }) => {
+const Contact = () => {
   return (
     <>
     <div class="contact-main-header">
@@ -28,7 +28,7 @@ const Contact = ({ setactive }) => {
       <MessageBox />
       </div>
       </div>
-      <Footer setactive={setactive} />
+      <Footer/>
       </div>
     </>
   );
