@@ -53,8 +53,8 @@ const Skills = () => {
         </p>
       </div>
         <div className="flex-box">
-      {skillsData.map((i)=>{
-        return <div className="box1">
+      {skillsData.map((i,idx)=>{
+        return <div key={idx} className="box1">
         <div className="iner-box">
           <img src={i.img} alt="hh"/>{}
         </div>

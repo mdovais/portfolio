@@ -6,6 +6,7 @@ import ContactProfile from "../components/contactProfile";
 import ContactSocial from "../components/contactSocial";
 
 const Contact = () => {
+  console.log("contact");
   return (
     <>
     <div class="contact-main-header">

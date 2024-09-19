@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../style/footer.css";
-// import { NavContext } from "../context/navContext";
+import { NavContext } from "../context/navContext";
 
 const Footer = () => {
-// const abz = useContext(NavContext);
-// console.log({abz});
+const {setActiveItem} = useContext(NavContext);
 
   const socialMedia = [
     {
@@ -45,11 +44,11 @@ const Footer = () => {
               <span>MD Owais Khan</span>
             </div>
 
-            <div className="footer-text1">Front End Developer</div>
+            <div className="footer-text1">Full Stack Developer</div>
             <div className="insta-img">
-              {socialMedia.map((i) => {
+              {socialMedia.map((i,idx) => {
                 return (
-                  <Link to={i.href}>
+                  <Link key={idx} to={i.href}>
                     <img className="pic" src={i.img} alt="img" />
                   </Link>
                 );
@@ -59,10 +58,10 @@ const Footer = () => {
 
           <div className="two-footer">
             <div className="name25">Explore</div>
-            {socialMedia.map((i) => {
+            {socialMedia.map((i,idx) => {
               return (
                 <div className="footer-text">
-                  <Link to={
+                  <Link key={idx} to={
                     "/"+i.link} onClick={()=>setActiveItem(i.link)}>{i.name}</Link>
                 </div>
               );

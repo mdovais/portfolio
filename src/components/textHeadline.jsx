@@ -45,7 +45,7 @@ const {setActiveItem} = useContext(NavContext);
         <div className="ticker">
           <div className="ticker-title">
             {tickerTitle.map((item, idx) => {
-              return <span>{item}</span>;
+              return <span key={idx}>{item}</span>;
             })}
           </div>
         </div>

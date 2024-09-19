@@ -46,8 +46,8 @@ const Tools = () => {
 
   <div className="partision2">
 
-    {toolsdata.map((i)=>{
-    return <div className="footer2">
+    {toolsdata.map((i,idx)=>{
+    return <div key={idx} className="footer2">
     <div className="iner-text3">
       <div className="imag-tag">
         <img

@@ -6,9 +6,10 @@ import Typed from 'typed.js';
 const About = () => {
   const imgData = ["https://img.icons8.com/?size=160&id=NfbyHexzVEDk&format=png","https://nodejs.org/static/logos/jsIconGreen.svg","https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000","https://static-00.iconduck.com/assets.00/mongodb-original-wordmark-icon-505x512-q86sq243.png","https://framerusercontent.com/images/OkBKDrqon3Bb68s6kPwyucgQiWM.svg","https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",]
   const el = React.useRef(null);
+console.log("about");
 
   React.useEffect(() => {
-    const typed = new Typed(el.current, {
+    new Typed(el.current, {
       strings: ["Scalable React Applications.",
         "Advanced JavaScript.",
         "State Management (Hooks, Redux Toolkit).",
@@ -17,7 +18,7 @@ const About = () => {
         "MongoDB.",
         "Performance Optimization.",
         "Git Workflows."],
-      typeSpeed: 50,
+      typeSpeed: 100,
       loop: true,
       loopCount: Infinity
     });
@@ -51,10 +52,8 @@ const About = () => {
         <div className="about-text">
           <span>About me</span>
           <div>
-            Frontend Developer with over 1 years of experience specialising in React.js, Redux, JavaScript (ES6+), HTML, and
-CSS. Adept at creating efficient, scalable, and responsive web applications with a focus on performance
-optimisation, state management, and enhancing user experience.
-          </div>
+         
+Full Stack Developer with over 1 year of experience specializing in React.js, Redux, JavaScript (ES6+), HTML, CSS, Node.js, Express.js, and MongoDB. Adept at creating efficient, scalable, and responsive web applications with a focus on performance optimization, state management (Hooks, Redux Toolkit), backend integration, and enhancing user experience through advanced JavaScript concepts, responsive design, and Git workflows.</div>
         </div>
       </div>
     </div>

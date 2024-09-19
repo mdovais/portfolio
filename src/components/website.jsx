@@ -25,9 +25,9 @@ const Website = () => {
       </div>
 
       <div className="two-works">
-        {webData.map((i) => {
+        {webData.map((i,idx) => {
           return (
-            <Link to={i.link}>
+            <Link key={idx} to={i.link}>
               <div className="work1">
                 <div className="iner-text-work">{i.name}</div>
                 <div className="iner-box10"

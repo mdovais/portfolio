@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/home';
 import Header from './components/header';
 import About from './pages/about';
@@ -9,7 +9,9 @@ import { NavContext } from './context/navContext';
 import { useState } from 'react';
 
 function App() {
-  const [active, setActiveItem] = useState("Home");
+  const location = useLocation();
+  const pathname = location.pathname.slice(1);
+  const [active, setActiveItem] = useState(pathname);
   return (
     <NavContext.Provider value={{active ,setActiveItem}}>
     <div className="App">
