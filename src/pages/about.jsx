@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Footer from '../components/footer';
 import "../style/about.css"
 import Typed from 'typed.js';
 
 const About = () => {
   const imgData = ["https://img.icons8.com/?size=160&id=NfbyHexzVEDk&format=png","https://nodejs.org/static/logos/jsIconGreen.svg","https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000","https://static-00.iconduck.com/assets.00/mongodb-original-wordmark-icon-505x512-q86sq243.png","https://framerusercontent.com/images/OkBKDrqon3Bb68s6kPwyucgQiWM.svg","https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",]
-  const el = React.useRef(null);
-console.log("about");
+  const el = useRef(null);
 
   React.useEffect(() => {
     new Typed(el.current, {
