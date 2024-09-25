@@ -6,6 +6,8 @@ const Work = () => {
   return (
     <>
     <Website/>
+    <br />
+    <br />
     <Footer/>
     </>
   )

@@ -36,7 +36,6 @@ const ContactSocial = () => {
                     <p>{i.name}</p>
                     <span>{i.fllwr}</span>
                   </div>
-
                   <div className="arrow">
                     <img
                       src="https://framerusercontent.com/images/3HBSQpOa0jV29Yfsf50Y3cgfYXw.svg"

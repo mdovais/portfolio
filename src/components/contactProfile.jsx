@@ -7,7 +7,7 @@ const ContactProfile = () => {
         <img className="greyscale" src="/images/profile_pic-25.png" alt="img" />
         <div className="flex-clum">
           <div className="avalable"> <img className="greendot" src="https://cdn-icons-png.freepik.com/256/17500/17500413.png?semt=ais_hybrid" alt="img" /> Avalable to work</div>
-          <h3>Md Owais Khan</h3>
+          <h3>Owais Khan</h3>
           <span> Full Stack Developer</span>
         </div>
       </div>

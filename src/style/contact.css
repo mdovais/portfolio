@@ -4,8 +4,16 @@
   color: aliceblue;
   overflow-x: hidden;
   display: flex;
-  flex-direction: column
-  ;
+  flex-direction: column;
+}
+
+.arrow{
+  transition: all 0.4s ease-in-out ;
+}
+.flex-row:hover{
+  .arrow{
+    transform: rotate(-45deg);
+  }
 }
 
 .header {

@@ -11,7 +11,7 @@ import { useState } from 'react';
 function App() {
   const location = useLocation();
   const pathname = location.pathname.slice(1);
-  const [active, setActiveItem] = useState(pathname);
+  const [active, setActiveItem] = useState(pathname || "Home");
   return (
     <NavContext.Provider value={{active ,setActiveItem}}>
     <div className="App">

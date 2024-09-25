@@ -41,7 +41,7 @@ const {setActiveItem} = useContext(NavContext);
           </div>
           <div className="one-footer">
             <div className="name25">
-              <span>MD Owais Khan</span>
+              <span>Owais Khan</span>
             </div>
 
             <div className="footer-text1">Full Stack Developer</div>
