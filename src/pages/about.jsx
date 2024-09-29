@@ -74,12 +74,12 @@ Full Stack Developer with over 1 year of experience specializing in React.js, Re
   </div>
  
 
-  <div class="tools">
-    <div class="tools-img">
-      <div class="section">Tools I Use With Easy</div>
-      <div class="icons">
+  <div className="tools">
+    <div className="tools-img">
+      <div className="section">Tools I Use With Easy</div>
+      <div className="icons">
         {imgData.map((i)=>{
-          return  <div class="li">
+          return  <div className="li">
           <img src={i} alt="img" />
         </div>
         })}
@@ -87,10 +87,10 @@ Full Stack Developer with over 1 year of experience specializing in React.js, Re
     </div>
   </div>
 
-  <div class="beginning-box">
-    <div class="biggening">
+  <div className="beginning-box">
+    <div className="biggening">
       <span>The Beginning </span>
-      <div class="section">
+      <div className="section">
         Joined the exciting world of web design, diving into HTML, CSS, and
         JavaScript. Experimented with creating personal projects and exploring
         various design trends. Started building a solid foundation for the

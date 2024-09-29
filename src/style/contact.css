@@ -216,7 +216,9 @@ input {
   font-size: 18px;
   font-weight: 500;
   background-color: #131315;
+  color: #a6a7ac;
   border: none;
+  outline: none;
 }
 #textarea {
   height: 168px;
@@ -226,7 +228,9 @@ input {
   font-size: 18px;
   font-weight: 500;
   background-color: #131315;
+  color: #a6a7ac;
   border: none;
+  outline: none;
 }
 button {
   height: 57px;

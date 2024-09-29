@@ -7,12 +7,12 @@ const Allwork = () => {
   const {setActiveItem} = useContext(NavContext);
   return (
     <>
-      <div class="great6">
-        <div class="greet-10">
+      <div className="great6">
+        <div className="greet-10">
           <Link to="/Works"onClick={()=>setActiveItem("Works")} >
-            <div class="name10">View All Works</div>
+            <div className="name10">View All Works</div>
          </Link>
-          <div class="greeting10"></div>
+          <div className="greeting10"></div>
         </div>
       </div>
     </>

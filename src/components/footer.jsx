@@ -60,8 +60,8 @@ const {setActiveItem} = useContext(NavContext);
             <div className="name25">Explore</div>
             {socialMedia.map((i,idx) => {
               return (
-                <div className="footer-text">
-                  <Link key={idx} to={
+                <div className="footer-text" key={idx}>
+                  <Link to={
                     "/"+i.link} onClick={()=>setActiveItem(i.link)}>{i.name}</Link>
                 </div>
               );
@@ -70,9 +70,9 @@ const {setActiveItem} = useContext(NavContext);
 
           <div className="two-footer">
             <div className="name25">Show Support!</div>
-            {socialMedia.map((i) => {
+            {socialMedia.map((i,idx) => {
               return (
-                <div className="footer-text">
+                <div className="footer-text" key={idx}>
                   <Link to={i.shref}>{i.support}</Link>
                 </div>
               );

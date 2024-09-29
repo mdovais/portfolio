@@ -7,8 +7,7 @@ import ContactSocial from "../components/contactSocial";
 
 const Contact = () => {
   return (
-    <>
-    <div class="contact-main-header">
+    <div className="contact-main-header">
       <div className="my-work8">
         <h1>
           I’d <span>Love to hear </span>from you.
@@ -19,9 +18,9 @@ const Contact = () => {
         </p>
       </div>
 
-      <div class="box-center">
-    <div class="contact-box">
-    <div class="left-profile">
+      <div className="box-center">
+    <div className="contact-box">
+    <div className="left-profile">
       <ContactProfile/>
       <ContactSocial/>
       </div>
@@ -30,7 +29,6 @@ const Contact = () => {
       </div>
       <Footer/>
       </div>
-    </>
   );
 };
 

@@ -22,17 +22,15 @@ const ContactSocial = () => {
     },
   ];
   return (
-    <>
       <div className="social-networks">
-        {dataMedia.map((i) => {
+        {dataMedia.map((i,idx) => {
           return (
-            <>
-              <Link to={i.href}>
+              <Link to={i.href} key={idx}>
                 <div className="flex-row">
                   <div className="img-box">
                     <img src={i.img} alt="Logo"></img>
                   </div>
-                  <div class="two-text">
+                  <div className="two-text">
                     <p>{i.name}</p>
                     <span>{i.fllwr}</span>
                   </div>
@@ -44,11 +42,9 @@ const ContactSocial = () => {
                   </div>
                 </div>
               </Link>
-            </>
           );
         })}
       </div>
-    </>
   );
 };
 
