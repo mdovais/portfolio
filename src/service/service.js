@@ -1,8 +1,8 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://portfolio-server-0sma.onrender.com";
 
 export const SendMessage = async ({ name, email, message }) => {
   try {
-    const response = await fetch(`${BASE_URL}/send`, {
+    const response = await fetch(`${BASE_URL}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
